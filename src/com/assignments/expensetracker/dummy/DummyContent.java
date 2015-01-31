@@ -16,40 +16,42 @@ public class DummyContent {
 	/**
 	 * An array of sample (dummy) items.
 	 */
-	public static List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+	public static List<Expense> EXPENSES = new ArrayList<Expense>();
 
 	/**
 	 * A map of sample (dummy) items, by ID.
 	 */
-	public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+	public static Map<String, Expense> ITEM_MAP = new HashMap<String, Expense>();
 
 	static {
 		// Add 3 sample items.
-		addItem(new DummyItem("1", "Item 1"));
-		addItem(new DummyItem("2", "Item 2"));
-		addItem(new DummyItem("3", "Item 3"));
+		addItem(new Expense("1", "Item 1"));
+		addItem(new Expense("2", "Item 2"));
+		addItem(new Expense("3", "Item 3"));
 	}
 
-	private static void addItem(DummyItem item) {
+	private static void addItem(Expense expense) {
 		ITEMS.add(item);
 		ITEM_MAP.put(item.id, item);
 	}
 
 	/**
-	 * A dummy item representing a piece of content.
+	 * An expense.
 	 */
-	public static class DummyItem {
+	public static class Expense {
 		public String id;
 		public String content;
 
-		public DummyItem(String id, String content) {
+		public Expense(String id, String content) {
 			this.id = id;
 			this.content = content;
 		}
 
+		/*
 		@Override
 		public String toString() {
 			return content;
 		}
+		*/
 	}
 }
