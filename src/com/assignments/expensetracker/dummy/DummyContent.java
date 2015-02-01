@@ -31,8 +31,8 @@ public class DummyContent {
 	}
 
 	private static void addItem(Expense expense) {
-		ITEMS.add(item);
-		ITEM_MAP.put(item.id, item);
+		//ITEMS.add(item);
+		//ITEM_MAP.put(item.id, item);
 	}
 
 	/**

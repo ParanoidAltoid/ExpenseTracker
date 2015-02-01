@@ -15,12 +15,52 @@ public class Expense {
 	public Expense(Date date, ExpenseCategory category, String description,
 			double amountSpent, String currency) {
 		
-		this.date = date;
-		this.category = category;
-		this.description = description;
-		this.amountSpent = amountSpent;
-		this.currency = currency;
+		this.setDate(date);
+		this.setCategory(category);
+		this.setDescription(description);
+		this.setAmountSpent(amountSpent);
+		this.setCurrency(currency);
 		
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public ExpenseCategory getCategory() {
+		return category;
+	}
+
+	public void setCategory(ExpenseCategory category) {
+		this.category = category;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public double getAmountSpent() {
+		return amountSpent;
+	}
+
+	public void setAmountSpent(double amountSpent) {
+		this.amountSpent = amountSpent;
+	}
+
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 
 }
